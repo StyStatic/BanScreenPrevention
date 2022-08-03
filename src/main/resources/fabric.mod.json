@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "banprevention",
+  "version": "${version}",
+  "name": "banprevention",
+  "description": "Prevents the Ban Screen",
+  "authors": [
+    "StyStatic"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/banprevention/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.data_stream.banprevention.banprevention.client.banpreventionClient"
+    ],
+    "main": [
+      "com.data_stream.banprevention.banprevention.banprevention"
+    ]
+  },
+  "mixins": [
+    "banprevention.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.8",
+    "fabric": "*",
+    "minecraft": "1.19.1"
+  }
+}
